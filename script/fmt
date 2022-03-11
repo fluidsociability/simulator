@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+# Auto-format source code so that having any opinion about it is irrelevant
+# https://csharpier.com/
+
+# Usage: script/fmt path/to/dir/to/fmt
+
+cd "$(dirname "$0")/.."
+
+dotnet dotnet-csharpier $@
