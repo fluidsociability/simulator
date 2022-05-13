@@ -1,0 +1,13 @@
+#!/usr/bin/env python3
+
+import os, sys
+
+
+def main():
+    # arch = "osx-x64"
+    arch = "osx-arm64"
+    os.system("dotnet build -c Release -r %s --self-contained" % arch)
+
+
+if __name__ == "__main__":
+    sys.exit(main())
